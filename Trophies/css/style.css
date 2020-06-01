@@ -1,0 +1,219 @@
+*{
+  font-family: Trebuchet MS;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+p,li,h1,h2,h3,h4{
+  color: #FFF;
+}
+
+body{
+  background: #FFF;
+}
+
+
+.container{
+  width:96%;
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header{
+  background: #cf1508;
+  padding: 0;
+  width:100%;
+  z-index: 1;
+}
+
+header h1{
+  margin: 0;
+  float: left;
+}
+
+header nav{
+  float: right;
+}
+
+header:after{
+  display: block;
+  content: "";
+  clear:  both;
+}
+
+header nav li{
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+header nav li a{
+  color: #FFF;
+}
+
+header nav li a:hover{
+    background-color: red;
+    padding: 8px;
+}
+
+header nav li a.current{
+  color:#1A1A1D;
+  font-weight: bold;
+}
+
+/*MAIN*/
+
+
+main{
+  background-color: #FFF;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+main h3{
+  color: #000;
+}
+
+main section.history h2{
+  color: #000;
+  margin: 20px;
+  margin-left: 45px;
+}
+
+main section.history p{
+  color: #000;
+  font-size: 20px;
+  margin: 20px;
+  margin-left: 45px;
+  text-align: justify;
+}
+
+#trophies{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#trophies .content{
+  flex: 0 1 32%;
+  color: #FEC800;
+  font-size: 40px;
+  line-height: 15px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#trophies .counter{
+  padding-top: 20px;
+  margin: 10px 0;
+}
+.content h3{
+  padding-top: 20px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+footer{
+  background: #202020;
+  padding: 30px 0;
+  border-top: solid #151515;
+  text-align: center;
+}
+
+footer h4{
+  margin: 0;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+footer ul{
+  padding-top: 20px;
+}
+footer ul li{
+  display: inline;
+  padding: 20px;
+}
+footer ul li a{
+  color: #888;
+}
+footer ul li a:hover{
+  color:#fff;
+  font-size: 30px;
+}
+
+footer span{
+  color: #666;
+}
+footer:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 480px){
+  header h1{
+    font-size:  80px;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  header nav{
+    font-size: 50px;
+    padding: 30px;
+  }
+  header ul li{
+    padding-right: 20px;
+    padding-left: 5px;
+  }
+  body{
+    min-width: 1260px;
+  }
+  .container{
+    width: 1300px;
+  }
+  main section.history h2{
+    text-align: center;
+    font-size: 90px;
+    margin-bottom: 10px;
+    color: red;
+  }
+  main section.history p{
+  font-size: 30px;
+  text-align: justify;
+  }
+  main #trophies .content{
+  flex: 0 1 40%;
+  margin-bottom: 90px;
+  }
+  main #trophies .content .icon i{
+    font-size: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  main #trophies .content .counter{
+    font-size: 100px;
+  }
+main #trophies .content h3{
+  margin-top: 100px;
+  font-size: 50px;
+  line-height: normal;
+}
+  footer{
+    font-size: 40px;
+  }
+
+  footer h4{
+    font-size: 70px;
+  }
+
+  footer ul li a:hover{
+    color:#fff;
+    font-size: 100px;
+  }
+}

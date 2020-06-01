@@ -1,0 +1,181 @@
+*{
+  font-family: Trebuchet MS;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+p,li,h1,h2,h3,h4{
+  color: #FFF;
+}
+
+body{
+  background: #FFF;
+}
+
+.container{
+  width:96%;
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header{
+  background: #cf1508;
+  padding: 0;
+  width:100%;
+}
+
+header h1{
+  margin: 0;
+  float: left;
+}
+
+header nav{
+  float: right;
+}
+
+header:after{
+  display: block;
+  content: "";
+  clear:  both;
+}
+
+header nav li{
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+header nav li a{
+  color: #FFF;
+}
+
+header nav li a:hover{
+    background-color: red;
+    padding: 8px;
+}
+
+header nav li a.current{
+  color:#1A1A1D;
+  font-weight: bold;
+}
+/*END HEADER*/
+
+.flex-container{
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.item{
+  flex: 0 1 32%;
+  text-align: center;
+  font-family: sans-serif;
+  border: 2px dashed red;
+  margin: 5px;
+}
+.item img{
+  width: 361px;
+  height: 428px;
+  margin-top: 2px;
+}
+.flex-container .item .text{
+
+  margin: 0 auto;
+  background-color: red;
+  opacity: 0.8;
+  padding: 20px;
+  font-weight: bold;
+}
+.flex-container .item span{
+  text-decoration: line-through;
+  font-weight: bold;
+}
+.flex-container .item span#new-price{
+color: #FFF;
+text-decoration: none;
+}
+
+/*START FOOTER*/
+footer{
+  background: #202020;
+  padding: 30px 0;
+  border-top: solid #151515;
+  text-align: center;
+}
+
+footer h4{
+  margin: 0;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+footer ul{
+  padding-top: 20px;
+}
+footer ul li{
+  display: inline;
+  padding: 20px;
+}
+footer ul li a{
+  color: #888;
+}
+footer ul li a:hover{
+  color:#fff;
+  font-size: 30px;
+}
+
+footer span{
+  color: #666;
+}
+footer:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 480px){
+  header h1{
+    font-size:  80px;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  header nav{
+    font-size: 50px;
+    padding: 30px;
+  }
+  header ul li{
+    padding-right: 20px;
+    padding-left: 5px;
+  }
+  body{
+    min-width: 1260px;
+  }
+  .container{
+    width: 1300px;
+  }
+
+
+.flex-container .item{
+  flex: 0 1 80%;
+  font-size: 60px;
+}
+  footer{
+    font-size: 40px;
+  }
+
+  footer h4{
+    font-size: 70px;
+  }
+
+  footer ul li a:hover{
+    color:#fff;
+    font-size: 100px;
+  }
+}
